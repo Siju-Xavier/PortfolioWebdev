@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Siju</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="#resume" class="nav__link">Resume</a>
+                        </li>
+
+                        <li>
+                            <a href="#footer" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <div class="home__image">
+                            <img src="profile.png" alt="image" class="home__img">
+                        </div>
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/siju-xavier-b63b18281/" target="_blank" class="home__link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://github.com/Siju-Xavier" target="_blank" class="home__link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="" target="_blank" class="home__link">
+                                
+                            </a>                            
+                        </div>
+                    </div>
+
+                    <div class="home__data grid">
+                        <h1 class="home__title">Siju Xavier</h1>
+                        <p class="home__description">
+                            Welcome to my Portfolio
+                        </p>
+
+                        <div class="home__buttons">
+                            <a href="Siju_Xavier_Resume.pdf" download="" target="_blank" class="button">Resume</a>
+                            <a href="#projects" class="button button__ghost">Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="aout__content">
+                        <div class="about__data">
+                            <h2 class="section__title">About Me</h2>
+                        <p class="about__description">
+                           I am a Software Engineering student at the University of Calgary, specializing in interactive, scalable, and secure software development. I have experience with building web application, and I am dedicated to continuously enhancing my skills.
+                        </p>
+                        </div>
+                        <div class="about__skills">
+                            <h3 class="about__subtitle">
+                                <i class="ri-bookmark-3-fill"></i>
+                                <span>Skills</span>
+                            </h3>
+                            <ul class="about__items">
+                                <li class="about__item">HTML</li>
+                                <li class="about__item">CSS</li>
+                                <li class="about__item">React</li>
+                                <li class="about__item">Nextjs</li>
+                                <li class="about__item">Node.js</li>
+                                <li class="about__item">Python</li>
+                                <li class="about__item">Java</li>
+                                <li class="about__item">JavaScript</li>
+                                <li class="about__item">TypeScript</li>
+                                <li class="about__item">Docker</li>
+                                <li class="about__item">Kubernetes</li>
+                                <li class="about__item">Jenkins</li>
+                                <li class="about__item">C</li>
+                                <li class="about__item">C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+
+                <div class="projects__container container grid">
+                    <article class="projects__card">
+                        <div class="projects__icon">
+                            <i class="ri-gamepad-line"></i>
+                        </div>
+                        <h3 class="projects__title">Fire Rescue</h3>
+                        <p class="projects__description">
+                            A Unity simulation built in C#, architected around the Observer and Strategy design patterns with full UML/SysML documentation. Led UI and sprite animation work, and validated the system with black-box and white-box testing.
+                        </p>
+                        <ul class="projects__tags">
+                            <li class="projects__tag">C#</li>
+                            <li class="projects__tag">Unity</li>
+                            <li class="projects__tag">Design Patterns</li>
+                            <li class="projects__tag">UML</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://deebo8070.itch.io/firerescue" target="_blank" class="projects__link">
+                                <i class="ri-github-fill"></i> Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__icon">
+                            <i class="ri-cloud-line"></i>
+                        </div>
+                        <h3 class="projects__title">Cloud Cast</h3>
+                        <p class="projects__description">
+                            A full-stack weather platform built with React 19 and TypeScript, featuring Supabase authentication with row-level security, live Mapbox GL JS visualization, Framer Motion transitions, and Recharts trend dashboards.
+                        </p>
+                        <ul class="projects__tags">
+                            <li class="projects__tag">React</li>
+                            <li class="projects__tag">TypeScript</li>
+                            <li class="projects__tag">Supabase</li>
+                            <li class="projects__tag">Mapbox GL JS</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://advanced-weather-app-peach.vercel.app/" target="_blank" class="projects__link">
+                                <i class="ri-external-link-line"></i>Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__icon">
+                            <i class="ri-flight-takeoff-line"></i>
+                        </div>
+                        <h3 class="projects__title">Flight Reservation System</h3>
+                        <p class="projects__description">
+                            A booking platform with a Java and Javalin backend connected to MySQL, extended with a React and Vite frontend. Owned the controller logic and most of the Java class design.
+                        </p>
+                        <ul class="projects__tags">
+                            <li class="projects__tag">Java</li>
+                            <li class="projects__tag">Javalin</li>
+                            <li class="projects__tag">MySQL</li>
+                            <li class="projects__tag">React</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://github.com/Siju-Xavier/FlightReservationSystem" target="_blank" class="projects__link">
+                                <i class="ri-github-fill"></i> Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__icon">
+                            <i class="ri-bar-chart-2-line"></i>
+                        </div>
+                        <h3 class="projects__title">NBA Player Performance Predictor</h3>
+                        <p class="projects__description">
+                            A machine learning pipeline built with Python and scikit-learn to predict player performance, covering data cleaning, feature engineering, and model validation.
+                        </p>
+                        <ul class="projects__tags">
+                            <li class="projects__tag">Python</li>
+                            <li class="projects__tag">scikit-learn</li>
+                            <li class="projects__tag">Data Analysis</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://github.com/Siju-Xavier/ENSF444-Project-Group22" target="_blank" class="projects__link">
+                                <i class="ri-github-fill"></i> Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__icon">
+                            <i class="ri-leaf-line"></i>
+                        </div>
+                        <h3 class="projects__title">ComputeShift</h3>
+                        <p class="projects__description">
+                            A carbon-aware compute scheduling tool built at the David Holub Interdisciplinary Cleantech Design Challenge, applying research on sustainable computing to a working prototype under hackathon time pressure.
+                        </p>
+                        <ul class="projects__tags">
+                            <li class="projects__tag">Cleantech</li>
+                            <li class="projects__tag">Scheduling</li>
+                            <li class="projects__tag">Hackathon</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://mechnain.github.io/computeshift-demo" target="_blank" class="projects__link">
+                                <i class="ri-external-link-line"></i> Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__icon">
+                            <i class="ri-cpu-line"></i>
+                        </div>
+                        <h3 class="projects__title">Real-Time Countdown Timer</h3>
+                        <p class="projects__description">
+                            Designed and implemented a real-time countdown timer on a PIC microcontroller using assembly/C, with UART for terminal display, Timer peripherals for 1-second updates, and CN interrupts for button input. Built a finite state machine handling set, run, pause, and alarm states, with debounced controls and a low-power idle mode.
+                        <ul class="projects__tags">
+                            <li class="projects__tag">C</li>
+                            <li class="projects__tag">PIC24 Assembly</li>
+                            <li class="projects__tag">Embedded Systems</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://github.com/Siju-Xavier/Embedded-Countdown-Timer-with-Microcontroller-PIC-" target="_blank" class="projects__link">
+                                <i class="ri-github-fill"></i> Code
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="resume section" id="resume">
+                <h2 class="section__title">Resume</h2>
+
+                <div class="resume__container container grid">
+                    <div class="resume__group">
+                        <h3 class="resume__subtitle">
+                            <i class="ri-graduation-cap-line"></i>
+                            <span>Education</span>
+                        </h3>
+
+                        <div class="resume__item">
+                            <h4 class="resume__role">B.Sc. Software Engineering</h4>
+                            <span class="resume__place">Schulich School of Engineering, University of Calgary</span>
+                            <span class="resume__time">Expected April 2027</span>
+                        </div>
+                    </div>
+
+                    <div class="resume__group">
+                        <h3 class="resume__subtitle">
+                            <i class="ri-hand-heart-line"></i>
+                            <span>Volunteer Experience</span>
+                        </h3>
+
+                        <div class="resume__item">
+                            <h4 class="resume__role">President</h4>
+                            <span class="resume__place">Engineers Without Borders, University of Calgary</span>
+                            <span class="resume__time">September 2024 &ndash; April 2025</span>
+                        </div>
+
+                        <div class="resume__item">
+                            <h4 class="resume__role">VP Events</h4>
+                            <span class="resume__place">Right to Play</span>
+                            <span class="resume__time">December 2023 &ndash; April 2025</span>
+                        </div>
+
+                        <div class="resume__item">
+                            <h4 class="resume__role">VP Communications</h4>
+                            <span class="resume__place">Engineers Without Borders, University of Calgary</span>
+                            <span class="resume__time">September 2023 &ndash; April 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume__button-container">
+                    <a href="Siju_Xavier_Resume.pdf" download="" target="_blank" class="button">
+                        <i class="ri-download-2-line"></i> Download Resume
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer section" id="footer">
+            <div class="footer__container container">
+                <h2 class="footer__title">Siju Xavier</h2>
+                <p class="footer__description">Software Engineering Student, Calgary AB</p>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/siju-xavier-b63b18281/" target="_blank" class="footer__link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="https://github.com/Siju-Xavier" target="_blank" class="footer__link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="mailto:siju.xavier@ucalgary.ca" class="footer__link">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                </div>
+
+                <span class="footer__copy">&copy; 2026 Siju Xavier. All rights reserved.</span>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        <script src="main.js"></script>
+    </body>
+</html>
