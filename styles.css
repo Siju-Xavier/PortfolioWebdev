@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -16,7 +16,9 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Unbounded", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --heading-font: "Unbounded", sans-serif;
+  --mono-font: "JetBrains Mono", monospace;
   --bigger-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -76,7 +78,9 @@ button {
 }
 
 h1, h2, h3, h4 {
+  font-family: var(--heading-font);
   font-weight: var(--font-semi-bold);
+  letter-spacing: -.02em;
 }
 
 ul {
@@ -140,6 +144,7 @@ img {
 
 .nav__logo{
     color:var(--white-color);
+    font-family: var(--heading-font);
     font-weight: var(--font-semi-bold);
     transition: color .4s;
 }
@@ -356,7 +361,9 @@ img {
     padding: .5rem .75rem;
     border-radius: 2rem;
     color: var(--black-color);
-    font-weight: var(--font-regular);
+    font-family: var(--mono-font);
+    font-size: .8rem;
+    font-weight: var(--font-medium);
     border: 2px solid var(--body-color);
     cursor: default;
     transition: background-color .4s, color .4s, border-color .4s;
@@ -381,6 +388,7 @@ img {
     display: flex;
     flex-direction: column;
     row-gap: .75rem;
+    cursor: pointer;
     transition: transform .4s, border-color .4s, box-shadow .4s;
 }
 
@@ -424,7 +432,8 @@ img {
 .projects__tag{
     background-color: hsla(var(--hue), 80%, 48%, .1);
     color: var(--first-color);
-    font-size: .75rem;
+    font-family: var(--mono-font);
+    font-size: .7rem;
     padding: .3rem .65rem;
     border-radius: 1rem;
     border: 1px solid hsla(var(--hue), 80%, 48%, .25);
@@ -443,7 +452,7 @@ img {
     color: var(--white-color);
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
-    transition: color .4s;
+    transition: color .4s, gap .4s;
 }
 
 .projects__link i{
@@ -451,8 +460,9 @@ img {
     color: var(--first-color);
 }
 
-.projects__link:hover{
+.projects__card:hover .projects__link{
     color: var(--first-color);
+    column-gap: .55rem;
 }
 
 /*=============== RESUME ===============*/
@@ -511,7 +521,8 @@ img {
 
 .resume__time{
     display: block;
-    font-size: var(--small-font-size);
+    font-family: var(--mono-font);
+    font-size: .75rem;
     color: var(--first-color);
     margin-top: .15rem;
 }
@@ -610,7 +621,7 @@ img {
 }
 
 
-/*=============== BREAKPOINTS ===============*/
+
 /* For small devices */
 @media screen and (max-width: 320px) {
     .container{
@@ -639,5 +650,3 @@ img {
         column-gap: 4rem;
     }
 }
-
-/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
